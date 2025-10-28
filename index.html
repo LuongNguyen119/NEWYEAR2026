@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Còn Bao Nhiêu Ngày Nữa Đến Tết</title>
+    <link rel="shortcut icon" href="/IMG/2026 new year.png" />
+    <link rel="stylesheet" href="/CSS/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="main">
+
+            <div class="newYear-countdow">
+                <canvas id="fireworks" style="display: none;"></canvas>
+                <div>
+                    <h3 id="today"><strong><span class="today-text tet-text">Hôm nay:</span>
+                            <span class="weekday"></span><span class="weekday-comman">,</span>
+                            <span class="date-gregorian"></span>
+                            <span class="tet-text">(Dương lịch) |</span>
+                            <span class="date-lunar"></span> <span class="tet-text">(Âm lịch)</span> </strong></h3>
+                </div>
+                <div>
+                    <h3 id="hour"><strong><span class="hour-text tet-text"> Giờ: </span> <span
+                                class="time"></span></strong></h3>
+                </div>
+                <div>
+                    <h3 id="text"><span class="tet-text" id="countdown-text">Sắp đến </span>
+                        <span class="tet-text-happy">Tết Nguyên Đán 2026 </span>
+                        <span class="tet-text" id="countdown-end-text">rồi! Chỉ còn...</span>
+                    </h3>
+                    <h3 id="after-countdown" style="display:none;"></h3>
+                </div>
+                <div>
+                    <h3 class="tet-text countdown-style" id="countdown">NGÀY</h3>
+                </div>
+                <div>
+                    <h3 id="event-date" class="tet-text"><strong class="event-date-text">Ngày diễn ra:</strong></h3>
+                </div>
+                <div>
+                    <h4 class="tet-text" id="date-event">Số ngày diễn ra sự kiện: 7 Ngày</h4>
+                    <h4 class="tet-text" id="event-days-wrapper" style="display: none;">Số ngày còn lại của sự kiện:
+                        <span id="days-left"></span> Ngày
+                    </h4>
+                    <h4 class="tet-text" id="clock-vn">Mùi Giờ: Việt Nam/Hồ Chí Minh</h4>
+                </div>
+                <!-- <div class="tet-text">
+                    <a href="https://www.facebook.com/100035200653001" class="btn btn-outline-warning btn-sm"
+                        target="_blank">About Me</a>
+                </div> -->
+                <div>
+                    <h4 class="tet-text-copyright">©2025 Drinn Entertainment, Luong Nguyen <br> 2025 Website Form. All
+                        rights
+                        reserved | Design by Luong Nguyen</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/JS/countdown.js"></script>
+<script src="/JS/Today.js"></script>
+<script src="/JS/Hour.js"></script>
+<script src="/JS/dowday.js"></script>
+<script src="/JS/canvas.js"></script>
+
+</html>

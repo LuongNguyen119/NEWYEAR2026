@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+body {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  line-height: 0.9;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: blueviolet;
+  gap: 2px;
+}
+.main {
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+  text-align: center;
+}
+.newYear-countdow {
+  background-color: rgb(232, 6, 6);
+  padding-left: 350px;
+  padding-right: 350px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  transform: scale(0.95);
+}
+
+.countdown-style {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+#today,
+#hour,
+#text,
+#countdown,
+#event-date,
+#date-event,
+#event-days-wrapper,
+#clock-vn {
+  font-size: 22px;
+}
+.count-days {
+  font-size: 100px;
+}
+.count-time {
+  font-size: 28px;
+}
+.time {
+  color: rgb(255, 230, 0);
+}
+.tet-text {
+  color: rgb(3, 86, 212);
+}
+.date-gregorian,
+.date-lunar,
+.tet-text-happy,
+.weekday,
+.weekday-comman,
+.day,
+.month,
+.year,
+.lunar-day,
+.lunar-month,
+.lunar-year,
+.count-num {
+  color: rgb(255, 230, 0);
+  font-weight: bold;
+}
+.tet-text-copyright {
+  color: rgb(76, 3, 212);
+  margin-top: 20px;
+  margin: 30px 0;
+}
+.event-ended {
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+.event-ended-1 {
+  color: rgb(253, 185, 12);
+}
+.event-ended-2 {
+  color: rgb(47, 255, 0);
+}
+#fireworks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  background: transparent;
+  pointer-events: none;
+}
+.after-day-text {
+  color: #001aff;
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: blueviolet;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+  }
+
+  .newYear-countdow {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(232, 6, 6);
+    padding: 25px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    transform: none;
+  }
+
+  .main {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+  }
+  .today-text,
+  .weekday,
+  .weekday-comman,
+  .date-gregorian,
+  .tet-text,
+  .date-lunar,
+  .tet-text-happy,
+  .event-date-text {
+    font-size: 20px;
+  }
+  .time,
+  .hour-text {
+    font-size: 30px;
+  }
+  #event-date {
+    line-height: 1.4;
+    margin: 6px 0;
+  }
+
+  #today,
+  #hour,
+  #text,
+  #countdown,
+  #date-event,
+  #event-days-wrapper,
+  #clock-vn {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 6px 0;
+  }
+
+  .countdown-style {
+    font-size: 26px;
+    margin: 30px 0;
+    padding: 10px;
+  }
+
+  .count-days {
+    font-size: 64px;
+  }
+
+  .count-time {
+    font-size: 20px;
+  }
+  .tet-text-copyright {
+    font-size: 14px;
+  }
+
+  .tet-text-copyright {
+    line-height: 1.3;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  h3,
+  h4 {
+    margin: 4px 0;
+  }
+  .tet-text {
+    color: rgb(3, 86, 212);
+  }
+
+  .date-gregorian,
+  .date-lunar,
+  .tet-text-happy,
+  .weekday,
+  .weekday-comman,
+  .day,
+  .month,
+  .year,
+  .lunar-day,
+  .lunar-month,
+  .lunar-year,
+  .count-num {
+    color: rgb(255, 230, 0);
+    font-weight: bold;
+  }
+
+  .tet-text-copyright {
+    color: rgb(76, 3, 212);
+  }
+  #fireworks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    pointer-events: none;
+    z-index: 9999;
+  }
+}
+
+@media (max-width: 480px) {
+  .count-days {
+    font-size: 52px;
+  }
+
+  .count-time {
+    font-size: 18px;
+  }
+
+  #today,
+  #hour,
+  #text,
+  #event-date,
+  #date-event,
+  #clock-vn {
+    font-size: 14px;
+  }
+
+  .tet-text-copyright {
+    font-size: 10px;
+  }
+
+  .newYear-countdow {
+    padding: 20px 10px;
+    justify-content: space-around;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1024px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(232, 6, 6);
+    overflow: hidden;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 6, 6);
+  }
+
+  .newYear-countdow {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 6, 6);
+    text-align: center;
+    padding: 4vw;
+    box-sizing: border-box;
+  }
+
+  #today,
+  #hour,
+  #text,
+  #countdown,
+  #event-date,
+  #date-event,
+  #event-days-wrapper,
+  #clock-vn {
+    font-size: 2vw;
+    margin: 0.5vw 0;
+  }
+  #event-date,
+  #date-event {
+    margin-top: 30px;
+  }
+
+  .count-days {
+    font-size: 6vw;
+    font-weight: bold;
+  }
+
+  .count-time {
+    font-size: 2.5vw;
+  }
+
+  .tet-text-copyright {
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    color: rgb(76, 3, 212);
+  }
+
+  .tet-text {
+    color: rgb(3, 86, 212);
+  }
+
+  .date-gregorian,
+  .date-lunar,
+  .tet-text-happy,
+  .weekday,
+  .weekday-comman,
+  .day,
+  .month,
+  .year,
+  .lunar-day,
+  .lunar-month,
+  .lunar-year,
+  .count-num {
+    color: rgb(255, 230, 0);
+    font-weight: bold;
+  }
+
+  #fireworks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    z-index: 9999;
+    pointer-events: none;
+  }
+  .line {
+    height: 4px;
+    margin: 15px 0;
+  }
+}
